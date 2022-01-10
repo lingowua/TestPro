@@ -1,1 +1,5 @@
-*.scuserstate
+*.xcworkspace
+xcuserdata
+xcodeproj/Pods
+xcodeproj/.DS_Store
+
