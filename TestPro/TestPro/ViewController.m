@@ -21,7 +21,7 @@
 
 - (void)initUI {
     UILabel *curLabel = [[UILabel alloc] initWithFrame:CGRectMake(200, 200, 200, 20)];
-    curLabel.text = @"这是Master";
+    curLabel.text = @"这是Dev";
     [self.view addSubview:curLabel];
 }
 
