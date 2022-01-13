@@ -2,4 +2,6 @@
 xcuserdata
 xcodeproj/Pods
 xcodeproj/.DS_Store
+product/
+.gitignore
 
