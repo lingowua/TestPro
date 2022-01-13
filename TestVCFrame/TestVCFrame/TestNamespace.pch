@@ -1,0 +1,14 @@
+//
+//  TestNamespace.h
+//  TestVCFrame
+//
+//  Created by lingowu on 2022/1/13.
+//
+
+#ifndef TestNamespace_h
+#define TestNamespace_h
+
+#define TestVC TestVC_V1
+#define TestView TestView_V1
+
+#endif /* TestNamespace_h */
