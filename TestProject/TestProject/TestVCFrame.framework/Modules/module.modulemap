@@ -1,0 +1,6 @@
+framework module TestVCFrame {
+  umbrella header "TestVCFrame.h"
+
+  export *
+  module * { export * }
+}
