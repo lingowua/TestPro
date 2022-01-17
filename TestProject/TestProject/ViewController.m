@@ -6,7 +6,6 @@
 //
 
 #import "ViewController.h"
-#import <TestVCFrame/TestVCFrame.h>
 
 @interface ViewController ()
 
@@ -20,25 +19,17 @@
 }
 
 - (void)initUI {
-    self.view.backgroundColor = UIColor.whiteColor;
-    
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 50, 50)];
-    btn.backgroundColor = UIColor.grayColor;
-    [btn addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    
     UISwitch *sw = [[UISwitch alloc] initWithFrame:CGRectMake(200, 400, 200, 100)];
-    [sw addTarget:self action:@selector(swAct:) forControlEvents:UIControlEventValueChanged];
+    [sw addTarget:self action:@selector(jump:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:sw];
 }
 
-- (void)jump {
-    TestVC *test = [[TestVC alloc] init];
-    [self pushViewController:test animated:YES];
-}
-
-- (void)swAct:(UISwitch *)sender {
-    NSLog(sender.on ? @"选中" : @"未选中");
+- (void)jump:(UISwitch *)sender {
+    NSString *str = sender.on ? @"TestView_V1" : @"TestView";
+    Class cls = NSClassFromString(str);
+    
+    id test = [[cls alloc] init];
+    [self.view addSubview:test];
 }
 
 @end

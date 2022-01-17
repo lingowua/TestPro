@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F454FD4627900ABE00871D5D /* TestVCFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = F454FD4427900ABE00871D5D /* TestVCFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F454FD4E27900B4800871D5D /* TestVC.h in Headers */ = {isa = PBXBuildFile; fileRef = F454FD4C27900B4800871D5D /* TestVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F454FD4F27900B4800871D5D /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F454FD4D27900B4800871D5D /* TestVC.m */; };
-		F454FD5227900C1700871D5D /* TestView.h in Headers */ = {isa = PBXBuildFile; fileRef = F454FD5027900C1700871D5D /* TestView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F454FD4627900ABE00871D5D /* TestVCFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = F454FD4427900ABE00871D5D /* TestVCFrame.h */; };
+		F454FD5227900C1700871D5D /* TestView.h in Headers */ = {isa = PBXBuildFile; fileRef = F454FD5027900C1700871D5D /* TestView.h */; };
 		F454FD5327900C1700871D5D /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = F454FD5127900C1700871D5D /* TestView.m */; };
 /* End PBXBuildFile section */
 
@@ -18,8 +16,6 @@
 		F454FD4127900ABE00871D5D /* TestVCFrame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestVCFrame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F454FD4427900ABE00871D5D /* TestVCFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVCFrame.h; sourceTree = "<group>"; };
 		F454FD4527900ABE00871D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F454FD4C27900B4800871D5D /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
-		F454FD4D27900B4800871D5D /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		F454FD5027900C1700871D5D /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
 		F454FD5127900C1700871D5D /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		F454FD7B279016AA00871D5D /* TestNamespace.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNamespace.pch; sourceTree = "<group>"; };
@@ -57,8 +53,6 @@
 			children = (
 				F454FD4427900ABE00871D5D /* TestVCFrame.h */,
 				F454FD4527900ABE00871D5D /* Info.plist */,
-				F454FD4C27900B4800871D5D /* TestVC.h */,
-				F454FD4D27900B4800871D5D /* TestVC.m */,
 				F454FD5027900C1700871D5D /* TestView.h */,
 				F454FD5127900C1700871D5D /* TestView.m */,
 				F454FD7B279016AA00871D5D /* TestNamespace.pch */,
@@ -73,9 +67,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F454FD4627900ABE00871D5D /* TestVCFrame.h in Headers */,
 				F454FD5227900C1700871D5D /* TestView.h in Headers */,
-				F454FD4E27900B4800871D5D /* TestVC.h in Headers */,
+				F454FD4627900ABE00871D5D /* TestVCFrame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F454FD5327900C1700871D5D /* TestView.m in Sources */,
-				F454FD4F27900B4800871D5D /* TestVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,3 @@ FOUNDATION_EXPORT double TestVCFrameVersionNumber;
 FOUNDATION_EXPORT const unsigned char TestVCFrameVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <TestVCFrame/PublicHeader.h>
-
-
-#import <TestVCFrame/TestVC.h>
-#import <TestVCFrame/TestView.h>

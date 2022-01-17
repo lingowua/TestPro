@@ -14,7 +14,7 @@
 		F454FD6D27900EB200871D5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F454FD6C27900EB200871D5D /* Assets.xcassets */; };
 		F454FD7027900EB200871D5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F454FD6E27900EB200871D5D /* LaunchScreen.storyboard */; };
 		F454FD7327900EB200871D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F454FD7227900EB200871D5D /* main.m */; };
-		F454FD7A2790105500871D5D /* TestVCFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F454FD792790105500871D5D /* TestVCFrame.framework */; };
+		F4817E5D27955DE20041313D /* TestVCFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4817E5C27955DE20041313D /* TestVCFrame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		F454FD6F27900EB200871D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F454FD7127900EB200871D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F454FD7227900EB200871D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F454FD792790105500871D5D /* TestVCFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestVCFrame.framework; sourceTree = "<group>"; };
+		F4817E5C27955DE20041313D /* TestVCFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestVCFrame.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F454FD7A2790105500871D5D /* TestVCFrame.framework in Frameworks */,
+				F4817E5D27955DE20041313D /* TestVCFrame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		F454FD5F27900EB100871D5D /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
-				F454FD792790105500871D5D /* TestVCFrame.framework */,
+				F4817E5C27955DE20041313D /* TestVCFrame.framework */,
 				F454FD6027900EB100871D5D /* AppDelegate.h */,
 				F454FD6127900EB100871D5D /* AppDelegate.m */,
 				F454FD6327900EB100871D5D /* SceneDelegate.h */,
@@ -306,6 +306,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = lingowu.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,6 +330,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = lingowu.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
